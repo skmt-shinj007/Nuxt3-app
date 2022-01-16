@@ -1,33 +1,37 @@
-# Nuxt-with-docker
+# My portfolio site
 
-Docker-composeでnuxt.jsの開発環境を構築する物です。
+| 開発環境 | `Docker`, `Docker compose` |
+| フレームワーク | Nuxt3 |
+| バージョン管理 | Git |
+| リポジトリ | GitHub |
+| 構成 | Jamstack |
+| CMS | micro cms |
+## Nuxt 3 Minimal Starter
 
-## Requirements
+We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
-- Git
-- Docker
-- Docker-compose
+### Setup
 
-## Usage
+Make sure to install the dependencies
 
-GitHubからクローンしてコンテナを立ち上げる
-
-```cmd
-git clone https://github.com/szne/nuxt-with-docker.git
-ren nuxt-with-docker your-project-name
-cd your-project-name
-docker compose up -d
+```bash
+yarn install
 ```
 
-コンテナ内に入ってnuxt.jsの環境を作成する
+### Development
 
-```cmd
-docker-compose exec app /bin/sh
-```
+Start the development server on http://localhost:3000
 
-```sh
-yarn create nuxt-app . --overwrite-dir
+```bash
 yarn dev
 ```
 
-For more information, see <https://zenn.dev/szn/articles/8d3602dde2eb1c>
+### Production
+
+Build the application for production:
+
+```bash
+yarn build
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).

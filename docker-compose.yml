@@ -1,16 +1,15 @@
-version: '3.8'
+version: '3'
 
 services:
   app:
-    build: .
-    ports:
-      - "3000:3000"
-    working_dir: "/src"
-    volumes:
-      - "./src:/src"
-      - node_modules_volume:/src/node_modules
+    build:
+      context: .
+      args:
+        WORKDIR: $WORKDIR
     tty: true
-    environment:
-    - CHOKIDAR_USEPOLLING=true
-volumes:
-  node_modules_volume:
+    # command: yarn install && yarn dev
+    ports:
+      - "$FRONT_PORT:$CONTAINER_PORT"
+      - "24678:24678"
+    volumes:
+      - ".:/portfolio"
