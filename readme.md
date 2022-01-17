@@ -1,16 +1,8 @@
-# My portfolio site
-
-| 開発環境 | `Docker`, `Docker compose` |
-| フレームワーク | Nuxt3 |
-| バージョン管理 | Git |
-| リポジトリ | GitHub |
-| 構成 | Jamstack |
-| CMS | micro cms |
-## Nuxt 3 Minimal Starter
+# Nuxt 3 Minimal Starter
 
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
-### Setup
+## Setup
 
 Make sure to install the dependencies
 
@@ -18,7 +10,17 @@ Make sure to install the dependencies
 yarn install
 ```
 
-### Development
+### 開発環境の立ち上げ
+
+```bash
+docker-compose up -d
+docker-compose exec app bash
+yarn dev -o
+
+# access tp http://localhost:8080
+```
+
+## Development
 
 Start the development server on http://localhost:3000
 
@@ -26,7 +28,7 @@ Start the development server on http://localhost:3000
 yarn dev
 ```
 
-### Production
+## Production
 
 Build the application for production:
 

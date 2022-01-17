@@ -12,4 +12,4 @@ services:
       - "$FRONT_PORT:$CONTAINER_PORT"
       - "24678:24678"
     volumes:
-      - ".:/portfolio"
+      - ".:/nuxt3-app"
