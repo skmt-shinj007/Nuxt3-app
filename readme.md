@@ -2,15 +2,7 @@
 
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
-## Setup
-
-Make sure to install the dependencies
-
-```bash
-yarn install
-```
-
-### 開発環境の立ち上げ
+## 開発環境の立ち上げ
 
 ```bash
 docker-compose up -d
@@ -18,6 +10,14 @@ docker-compose exec app bash
 yarn dev -o
 
 # access tp http://localhost:8080
+```
+
+## Setup
+
+Make sure to install the dependencies
+
+```bash
+yarn install
 ```
 
 ## Development
